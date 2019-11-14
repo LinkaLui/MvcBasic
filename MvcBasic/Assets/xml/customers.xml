@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+  <Customer>
+    <Id>1</Id>
+    <Name>Kevin</Name>
+    <Country>USA</Country>
+  </Customer>
+  <Customer>
+    <Id>2</Id>
+    <Name>David</Name>
+    <Country>China</Country>
+  </Customer>
+  <Customer>
+    <Id>3</Id>
+    <Name>Mary</Name>
+    <Country>Japan</Country>
+  </Customer>
+  <Customer>
+    <Id>4</Id>
+    <Name>John</Name>
+    <Country>Japan</Country>
+  </Customer>
+  <Customer>
+    <Id>5</Id>
+    <Name>Rose</Name>
+    <Country>USA</Country>
+  </Customer>
+</Customers>

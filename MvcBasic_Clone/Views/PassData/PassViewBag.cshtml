@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "PassViewBag";
+
+    string nickname = @ViewBag.Nickname;
+    decimal hieght = @ViewBag.Hieght;
+    decimal weight = @ViewBag.Weight;
+    bool married = @ViewBag.Married;
+
+}
+
+<h2>PassViewBag</h2>
+
+<ul>
+    @*<li>Name:@ViewBag.Nickname</li>
+    <li>Hieght:@(ViewBag.Hieght + 5)</li>
+    <li>Weight:@ViewBag.Weight</li>
+    <li>Married:@ViewBag.Married</li>*@
+
+    <li>Name:@nickname</li>
+    <li>Hieght:@hieght</li>
+    <li>Weight:@weight</li>
+    <li>Married:@married</li>
+</ul>
+

@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScriptResult</title>
+    <style>
+        h1, h2 {
+            border: 2px dashed black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h1{
+            background-color:lightgreen;
+        }
+
+        h2 {
+            background-color: plum;
+        }
+
+
+    </style>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <h1>JavaScriptResult</h1>
+
+    <button onclick="showMessage()">叫用JavaScriptResult定義的function</button>
+    <button onclick="Red()">背景變紅色</button>
+    <button onclick="Orange()">背景變橘色</button>
+    <button onclick="LightPink()">背景變粉紅色</button>
+
+    @*<p>@Ajax.ActionLink("顯示日期時間", "JsDate", new AjaxOptions { UpdateTargetId = "result" })</p>*@
+    <p>@Ajax.ActionLink("關於我", "AboutMe", new AjaxOptions { UpdateTargetId = "result", InsertionMode = InsertionMode.Replace, AllowCache = false })</p>
+    <div id="result"></div>
+
+    <p>@Ajax.ActionLink("人物牌卡", "getPartialCard", new AjaxOptions { UpdateTargetId="card" })</p>
+    <div id="card"></div>
+
+    <img src="/Results/DownloadImage/"  alt=""/>
+    <!--設定背景色-->
+    <script type="text/javascript" src="/results/setBodyBackgroundColor"></script>
+    <!--顯示結果訊息-->
+    <script type="text/javascript" src="@Url.Action("JsResult")"></script>
+    <script type="text/javascript" src="@Url.Action("JsFunction")"></script>
+    <script type="text/javascript" src="@Url.Action("JsColorFunction")"></script>
+
+
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+</body>
+</html>

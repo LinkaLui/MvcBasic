@@ -1,0 +1,36 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("應用程式名稱", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("首頁", "Index", "Home")</li>
+                <li>@Html.ActionLink("關於", "About", "Home")</li>
+                <li>@Html.ActionLink("連絡人", "Contact", "Home")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Friends控制器 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="~/Friends/Index">Index動作方法</a></li>
+                        <li><a href="~/Friends/Create">Create動作方法</a></li>
+                        <li><a href="~/Friends/Edit/1">Edit動作方法</a></li>
+                        <li><a href="~/Friends/Delete/1">Delete動作方法</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employees控制器 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="~/Employees/Index">Index動作方法</a></li>
+                        <li><a href="~/Employees/EmployeesList">EmployeeList動作方法</a></li>
+                        <li>@Html.ActionLink("員工資料表","EmployeeList","Employees")</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
